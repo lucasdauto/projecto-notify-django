@@ -1,1 +1,1 @@
-web: gunicorn notify.wsqi
+web: gunicorn notify.wsgi
