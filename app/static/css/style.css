@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Hind');
+
+
+body{
+    display: grid;
+    grid-template-areas:    'Banner Banner Banner Banner' 
+                            'conteudo conteudo conteudo conteudo' 
+                            'contato contato contato contato' 
+                            'redes redes redes redes' 
+                            'rodape rodape rodape rodape';
+    grid-template-rows: 83.5vh 50vh  65vh 65vh 23vh;
+    grid-template-columns: 24.7vw 24.7vw 24.7vw 24.7vw;
+    margin: 0;
+    padding: 0;
+    border-top: 6px solid #31BD69;
+    font-family: 'Hind', sans-serif;
+}
+
+#banner{
+    grid-area: Banner;
+    background-image: url("/static/images/banner.png");
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#banner #maoCelular{
+    height: 86%;
+    margin-top: 89px;
+
+}
+
+#conteudo{
+    grid-area: conteudo;
+    background-color: white;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 8.5%;
+    text-align: justify;
+   
+}
+
+.icone{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    padding:23px;
+    background-color: #31BD69;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 15px;
+   
+}
+
+.icone img{
+    width: 35px;
+}
+
+#texto1{
+    float:left;
+    width:50px;
+    margin-left:10px;
+    text-justify: right;
+     
+}
+
+
+#contato{
+    grid-area: contato;
+    background-color: #E3E3E3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#video{
+    margin-top: 50px;
+    margin-right: 60px;
+    
+}
+
+
+#Email{
+  background-color:white;
+  border:solid 2px rgb(206, 200, 200);
+  border-radius:10px;
+  width:300px;
+  height:46px;
+  margin-top: 50px;
+}
+ 
+#txtEmail{
+  float:left;
+  background-color:transparent;
+  padding-left:20px; 
+  font-size: 18px;
+  border:none;
+  height:42px;
+  width:190px;
+}
+ 
+#btnEmail{
+  border:none;
+  float:left;
+  height:46px;
+  border-radius:0 7px 7px 0;
+  width:90px;
+  font-weight:bold;
+  background:#31BD69;
+  color: white;
+  font-family: 'Hind', sans-serif;
+  font-size: 13pt;
+}
+
+#descEmail{
+    width: 500px;
+    margin-left: 9.5%;
+    font-family: 'Hind', sans-serif;
+}
+
+#descEmail p{
+    color: rgb(128, 128, 128);
+    font-size: 11pt;
+    text-align: justify;
+}
+
+#descEmail h4{
+    margin-bottom: 10px;
+    font-size: 15pt;
+    font-weight: bolder;
+}
+
+footer{
+    grid-area: rodape;
+    background-color: rgb(128, 128, 128);
+}
+
+iframe{
+    width:455px;
+    height:267px;
+}
+
+#linksBanner{
+    display: flex;
+    justify-content: space-between;
+    width: 8em;
+    margin: 0;
+}
+
+#linksBanner a{
+    background-color: rgba(0, 0, 0, 0.521);
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+
+#linksBanner a:hover{
+    background-color: #31BD69;
+}
+
+#linksBanner a img{
+    padding: 5px;
+    width: 24px;
+}
+
+#linkRodape{
+    background-color: #E3E3E3;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#linkRodape a{
+    font-size: 11pt;
+    text-decoration: none;
+    color: #8b8b8b;
+    margin-right: 20px;
+
+}
+
+#linkRodape a:hover{
+    color: #5c5c5c;
+}
+
+#redesSociais a img{
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+
+}
+
+#redesSociais a{
+    background-color: #b3b3b3;
+    padding: 10px;
+    border-radius: 100%;
+    width: 12em;
+    height: 12em;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+#redesSociais a:hover{
+    background-color: #31BD69;
+}
+
+#redesSociais {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#pessoas{
+    text-align: center;
+}
+
+#redes p{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 60px; 
+    margin-top: 35px;
+}
+
+#tituloRedes{
+    text-align: center;
+    color: black;
+}
+
+#tituloR{
+    color: rgb(128, 128, 128);
+}
+
+
+#textoDesc{ 
+    color: rgb(128, 128, 128);
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 60px; 
+    margin-top: 35px;
+}
+
+#textoDesc p{
+    font-style: italic;
+    font-size: 10pt;
+}
+
+#RedesNome {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#redes{
+    grid-area: redes;
+    background-color: white;
+}
+
+#textoBanner{
+    color: white;
+    width:  400px;
+    height: auto;
+    margin-left: 190px;
+    padding: 0;
+}
+
+#textoBanner h3{
+    font-family: 'Pacifico', cursive;
+    font-size: 36pt;
+    margin: 0;
+    font-weight: normal;
+}
+
+#textoBanner p{
+    font-family: 'Hind', sans-serif;
+    font-size: 16pt;
+    margin: 10px;
+}
+
+#textoBanner span{
+    color: #31BD69;
+}
+
+.topicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    text-align: justify;
+    font-family: 'Hind', sans-serif;
+}
+
+.topicos h3{
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+.topicos p{
+    font-size: 10pt;
+    text-align: left;
+    color: rgb(201, 200, 200);
+}
+
+@media (max-width:768px){
+    body{
+        display: grid;
+        grid-template-areas:    'Banner' 
+                                'conteudo' 
+                                'contato' 
+                                'redes' 
+                                'rodape';
+        grid-template-rows: 83.5vh auto auto auto auto;
+        grid-template-columns: 768px;
+        border-top: 6px solid #31BD69;
+        font-family: 'Hind', sans-serif;
+        max-width: 768px;
+    }
+    
+    #banner{
+        grid-area: Banner;
+        background-image: url("{% static 'images/banner.png' %}");
+        display: flex;
+        justify-content: center;
+    }
+
+    #maoCelular{
+        display: none;
+    }
+
+    #textoBanner{
+        margin-left: 0;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #textoBanner p{
+        text-shadow: 2px 1px #5c5c5c;
+    }
+
+    #linksBanner a{
+        background-color: rgba(0, 0, 0, 0.521);
+        padding: 5px;
+        width: 80px;
+        height: 35px;
+        margin-right: 10px;
+        border-radius: 100%;
+    }
+    #conteudo{
+        padding: 50px 10px;
+        flex-direction: column;
+    }
+
+    .topicos{
+        width: 60%;
+    }
+
+    .topicos p{
+        font-size: 15pt;
+    }
+
+    #contato{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    #textContato{
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    iframe{
+        width: 100%;
+    }
+
+    #descEmail{
+        margin: 0;
+    }
+
+    #redes{
+        padding: 30px 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #textoDesc p{
+        font-size: 13pt;
+    }
+
+    #textoDesc h5{
+        font-size: 15pt ;
+    }
+
+    #pessoas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    #pessoas img{
+        width: 60px;
+        height: 60px;
+        margin-right: 18px;
+    }
+
+    #tituloRedes h4{
+        font-size: 15pt;
+    }
+
+    #tituloRedes p{
+        font-size: 13.5pt;
+    }
+
+    #redesSociais{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 55%;
+        margin-left: 22%;
+    }
+
+    #redesSociais a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        padding: 0;
+    }
+
+    #redesSociais a img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    body{
+        border: none;
+    }
+
+    #textoBanner{
+        flex-wrap: wrap;
+    }
+
+    #textoBanner h3, span{
+        font-size: 120px;
+    }
+
+    #textoBanner p{
+        display: none;
+    }
+
+    #linksBanner {
+        display: none;
+    }
+
+    .topicos .icone{
+        width: 110px;
+        height: 110px;
+    }
+
+    .icone img{
+        width: 90px;
+    }
+
+    .topicos{
+        margin-bottom: 25px;
+    }
+
+    .topicos h3{
+        font-size: 30pt;
+    }
+
+    .topicos p{
+        font-size: 25pt;
+    }
+
+    #textContato{
+        margin: 0;
+        padding: 0;
+        width: 700px;
+        height: 530px;
+    }
+
+    iframe{
+        width: 600px;
+        height: 457px;
+    }
+
+    #descEmail h4{
+        font-size: 30pt;
+    }
+
+    #descEmail p{
+        font-size: 25pt;
+    }
+
+    #textoDesc p{
+        font-size: 18pt;
+    }
+
+    #textoDesc h5{
+        font-size: 22pt;
+    }
+
+    #pessoas img{
+        width: 100px;
+        height: 100px;
+    }
+
+    #tituloRedes h4{
+        font-size: 30pt;
+    }
+
+    #tituloRedes p{
+        font-size: 24pt;
+    }
+
+    #redesSociais{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #redesSociais a{
+        margin: 10px;
+        width: 180px;
+        height: 180px;
+    }
+
+    #redesSociais a img{
+        width: 90px;
+        height: 90px;
+    }
+    
+
+    #linkRodape{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+    }
+
+    #linkRodape a{
+        font-size: 20pt;
+    }
+
+}
